@@ -1,0 +1,16 @@
+{
+  "name": "Map App",
+  "short_name": "Map App",
+  "theme_color": "#002E5D",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/icons/mapIcon.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}

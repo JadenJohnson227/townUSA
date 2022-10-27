@@ -1,0 +1,147 @@
+<div id="flex-container">
+  <div class="main-container">
+    <h3 class="title-container">Customized Family History Hints</h3>
+
+    <div class="body-content" id="search-display">
+      <h3><strong>Welcome to the Map App!</strong></h3>
+
+      Generate customized record hints based on a person's surname or the county
+      they lived in. Filter by difficulty or type of hints using the options
+      button
+      <br />
+
+      <button mat-button (click)="displayInstructions()">
+        Detailed Instructions
+      </button>
+
+      <mat-expansion-panel
+        class="options-panel, mat-elevation-z0"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+        hideToggle
+      >
+        <mat-expansion-panel-header>
+          <mat-icon class="arrow-icon" *ngIf="panelOpenState"
+            >keyboard_arrow_up</mat-icon
+          >
+          <mat-panel-title class="panel-title"> Options </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-selection-list
+          #options
+          [multiple]="false"
+          [(ngModel)]="option"
+          (selectionChange)="updateType()"
+        >
+          <mat-list-option *ngFor="let option of menuList" [value]="option">
+            {{ option }}
+          </mat-list-option>
+        </mat-selection-list>
+        <div
+          *ngIf="
+            options.selectedOptions.selected[0]?.value === 'Record Attachment'
+          "
+          class="difficulty"
+        >
+          <mat-selection-list
+            #diff
+            [(ngModel)]="difficulty"
+            (selectionChange)="updateDiff()"
+          >
+            <mat-list-option *ngFor="let diffi of difficultyList" [value]="diffi">
+              {{ diffi }}
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
+      </mat-expansion-panel>
+      <br />
+
+      <div class="inputs">
+        <!-- Surname -->
+        <mat-form-field appearance="outline">
+          <mat-label>Surname</mat-label>
+          <!--autocomple = "off" disables automatic browser autocomplete-->
+          <input
+            (keyup)="getSuggestionsName()"
+            (keydown.enter)="populateMap()"
+            (focus)="clearSuggestions()"
+            [(ngModel)]="surname"
+            matInput
+            placeholder="Price"
+            [matAutocomplete]="auto"
+          />
+
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of autocomplete" [value]="option">
+              {{ option }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+        <!-- Location -->
+        <mat-form-field appearance="outline">
+          <mat-label>Location</mat-label>
+          <input
+            (keyup)="getSuggestionsLocation()"
+            (keydown.enter)="populateMap()"
+            (focus)="clearSuggestions()"
+            [(ngModel)]="location"
+            matInput
+            placeholder="Denton, Texas"
+            [matAutocomplete]="auto"
+          />
+
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of autocomplete" [value]="option">
+              {{ option }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+        <button mat-button (click)="populateMap()">Search</button>
+      </div>
+    </div>
+
+    <div class="body-content" id="project-display">
+      <h3><strong>Participate in One of Our Projects!</strong></h3>
+      <div class="all-project-container">
+        <div class="project-container" *ngFor="let proj of projects" (click)="projectClicked(proj.name)" >
+          <p class="project-title">{{ proj.name }}</p>
+          <p class="project-description">{{ proj.description }}</p>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <p class="scroll-text">SCROLL</p>
+        <img class="scroll-img" src="https://s3.us-west-2.amazonaws.com/map-app.familytech.byu.edu/51-519289_down-arrow-png-image-background-black-arrow-down.png" alt="">
+      </div>
+    </div>
+
+
+
+
+    <div class="footer-container">
+      <img src="../../assets/images/byuLogo.png" alt="BYU Logo" />
+      <div class="labLinks">
+        <a href="https://rll.byu.edu" target="_blank" rel="noreferrer noopener"
+          >Record Linking Lab</a
+        >
+        <a
+          href="https://familytech.byu.edu"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Family History Technology Lab</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-container">
+    <div class="tab search" id="search-tab" (click)="showSearch()">
+      <p id="search-tab-text">Search</p>
+    </div>
+    <div class="tab project" id="project-tab" (click)="showProjects()">
+      <p id="search-tab-text" >Projects</p>
+    </div>
+  </div>
+</div>
+
+

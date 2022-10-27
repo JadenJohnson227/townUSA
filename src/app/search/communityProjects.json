@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Denton, Texas",
+      "description": "The goal is to make sure that everyone that lived in Denton, Texas, up until 1940, has a profile on the family tree. The project is being done in honor of Elder Luke Carter, one of two missionaries who died in a car accident in May while serving in Denton, Texas.",
+      "location": "Denton, Texas"
+    },
+    {
+      "id": 2,
+      "name": "African American Families",
+      "description": "We have been working to improve the coverage of African Americans on the Family Tree as a way to create new discovery experiences. We have been working with volunteers to connect these individuals to their extended family members using record hints and public member trees on other websites.",
+      "location": null
+    },
+    {
+      "id": 3,
+      "name": "Mesquite, Texas",
+      "description": "This project is being done in honor of Aaron Lowe and Ty Jordan, both of whom grew up in Mesquite, Texas and were integral parts of the Utah University Football team. We want to bring more coverage to the family tree in this area and build up the community to remember both Aaron and Ty. ",
+      "location": "Mesquite, Texas"
+    }
+]

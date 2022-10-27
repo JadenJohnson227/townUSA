@@ -1,0 +1,9 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-size: medium;
+  color: black;
+}

@@ -1,0 +1,108 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* To prevent auto-scroll behavior on browser */
+  touch-action: none;
+}
+
+#map {
+  height: 100%;
+}
+
+.search-icon {
+  filter: invert(100%);
+  width: auto;
+  height: 80px;
+  display: block;
+}
+
+.refresh-icon {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+button {
+  background-color: #002e5d;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  padding: 50px;
+}
+
+.search-button {
+  background-color: #002e5d;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#justify {
+  transition: transform .5s;
+}
+
+#justify:hover {
+  transform: scaleX(.95) scaleY(.95) scaleZ(.95);
+  background-color: #003c77;
+}
+
+#justify:hover #joseph-smith {
+  display: none;
+}
+
+#justify:hover p {
+  display: block;
+}
+
+.button-text {
+  display: none;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+#reset-text {
+  display: none;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.tab-button {
+  background-color: #002e5d;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 25px;
+  padding: 25px;
+  margin: 10px 50px 50px 0;
+}
+
+#tab-field {
+  width: 150px;
+}
+
+.mat-form-field-wrapper .mat-form-field-flex {
+  background-color: rgba(255, 255, 255, .5) !important;
+} 
+
+.count-label {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin: 25px;
+}
+
+.count-label p {
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .1);
+
+}

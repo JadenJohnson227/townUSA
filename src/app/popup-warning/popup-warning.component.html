@@ -1,0 +1,45 @@
+<h2 mat-title>Pop-ups Blocked!</h2>
+
+<mat-dialog-content>
+  <div>
+    <p>
+      Please adjust your browser settings to allow pop-ups in order to use this
+      feature. If you need help enabling pop-ups, please see the help references
+      for your specific browser below:
+    </p>
+    <mat-chip-list class="center">
+      <mat-chip style="display: inline">
+        <a
+          target="_blank"
+          href="https://support.google.com/chrome/answer/95472?hl=en&co=GENIE.Platform%3DDesktop"
+          >Chrome (recommended browser)</a
+        >
+      </mat-chip>
+      <mat-chip style="display: inline">
+        <a
+          target="_blank"
+          href="https://support.mozilla.org/en-US/kb/pop-blocker-settings-exceptions-troubleshooting"
+          >Firefox</a
+        >
+      </mat-chip>
+      <mat-chip style="display: inline">
+        <a
+          target="_blank"
+          href="https://support.apple.com/guide/safari/block-pop-ups-sfri40696/mac"
+          >Safari</a
+        >
+      </mat-chip>
+      <mat-chip style="display: inline">
+        <a
+          target="_blank"
+          href="https://support.microsoft.com/en-us/Search/results?query=enable+popups"
+          >Edge</a
+        >
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Done</button>
+</mat-dialog-actions>

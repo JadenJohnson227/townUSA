@@ -1,0 +1,78 @@
+<div class="map-container">
+  <div id="map" (click)="pageClicked($event)"></div>
+</div>
+
+
+<!--
+<div *ngIf="showSearch">
+  <app-search (searchToMap)="startSearch($event)" (searchProjects)="startProjects($event)"></app-search>
+</div>
+-->
+
+
+<!-- <div *ngIf="showSearch">
+  <app-search (searchProjects)="startProjects($event)"></app-search>
+</div> -->
+
+<!--
+<div *ngIf="!showSearch">
+  <button id="justify" class="search-button" mat-fab (click)="makeAnotherSearch()">
+    <img class="search-icon" id="joseph-smith" src="../assets/icons/searchIcon.png" />
+    <p id="search-text" class="button-text">Search</p>
+  </button>
+  <button class="search-button" id="justify" mat-fab (click)="refresh()">
+    <mat-icon class="refresh-icon" id="joseph-smith">refresh</mat-icon>
+    <p id="reset-text">Reset</p>
+  </button>
+</div>
+<div *ngIf="!showSearch" class="count-label">
+  <p>Hints Left: {{ this.hintCount ? this.hintCount : "Error" }}</p>
+</div>
+<div
+  *ngIf="!showSearch"
+  style="right: 0; bottom: 0; display: inline; position: absolute"
+>
+  <mat-form-field
+    id="tab-field"
+    style="display: inline-block"
+    appearance="fill"
+    color="primary"
+    onchange="() => this.tabError = false;"
+  >
+    <mat-label>Num Tabs</mat-label>
+    <input
+      class="tab-input"
+      matInput
+      type="number"
+      value="5"
+      min="1"
+      max="25"
+      [(ngModel)]="numTabs"
+    />
+    <mat-error *ngIf="tabError">Please enter a value less than 25</mat-error>
+  </mat-form-field>
+  <button
+    class="tab-button"
+    mat-raised-button
+    color="primary"
+    (click)="openTabs()"
+  >
+    Open Tabs
+  </button>
+</div> -->
+
+<!-- <script>
+
+  function show() {
+    let button = document.getElementById("justify")
+    let tmpImg = document.getElementById("joseph-smith")
+    tmpImg.style.visibility = "hidden";
+    document.getElementById("search-text").style.visibility = "visible"
+  }
+
+  function hide() {
+    let tmpImg = document.getElementById("joseph-smith")
+    tmpImg.style.visibility = "visible";
+    document.getElementById("search-text").style.visibility = "hidden"
+  }
+</script> -->
