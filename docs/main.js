@@ -1699,7 +1699,7 @@ class MapComponent {
      * */
     configureIcon() {
         this.defaultIcon = leaflet__WEBPACK_IMPORTED_MODULE_0__.icon({
-            iconUrl: "../assets/icons/mapIcon.png",
+            iconUrl: "assets/icons/mapIcon.png",
             iconSize: [45, 45],
             iconAnchor: [22.5, 45],
             popupAnchor: [0, -40],
