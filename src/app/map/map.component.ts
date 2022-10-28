@@ -172,9 +172,9 @@ export class MapComponent implements AfterViewInit {
       }
       var popupContent = `<b>
       <a class="popup-click" href="${results[i].url}" target='_blank' rel='noreferrer noopener'>
-      </br>${results[i].url}
-      </a>
       </br>${results[i].county}, ${results[i].state}
+      </a>
+
       </b>`;
 
       marker.bindPopup(popupContent);
