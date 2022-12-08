@@ -1607,11 +1607,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_backend_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/backend.service */ 600);
 /* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/snack-bar */ 2528);
 /* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/dialog */ 5758);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 6362);
 
 
 
 
 
+
+function MapComponent_div_2_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div")(1, "div", 3)(2, "div")(3, "h1");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, "Do You have...");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](5, "br");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, " Historical Cousins in the USA");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "div")(8, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](9, "Select a pin to see if you have historical cousins there. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](10, "br");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](11, " You will then:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "ol")(13, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](14, "Enter a deceased grandparent or other relative (use birth name for women), then Search (Just enter First and middle name, Last name, and the state where they died.)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](16, "Scroll through the possible choices for your relative, then tap the correct one.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](17, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](18, "Wait while a list of possible cousin matches is checked.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](19, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](20, "After you see who you are related to, select one to see how you are related.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](22, "Select your ancestor to see what information he/she has in the tree.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](23, "button", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function MapComponent_div_2_Template_button_click_23_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r2.changeOpenPopUp(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](24, "Get Started");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](25, "div")(26, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](27, "If you find that:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](28, "ul")(29, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](30, "Your grandparent/ancestor is not found (not in the shared FamilySearch tree), or");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](31, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](32, "You don't have any cousins in the place you selected, or");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](33, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](34, "Your ancestor has few or no Photos and Memories,");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](35, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](36, "Then you can find free help in building your family tree, finding online records about your ancestor, or adding photos, stories, documents, and audio recordings to your ancestor's page.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](37, "button")(38, "a", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](39, "Get Help");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](40, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](41, "Would you like to add a pin for your town? contact: ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](42, "a", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](43, "ConnectedTempe@gmail.com");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()();
+} }
+function MapComponent_div_3_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div")(1, "div", 3)(2, "button", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function MapComponent_div_3_Template_button_click_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r4.changeOpenPopUp(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, "Open Instructions");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+} }
 /*
 interface search {
   projectName: string,
@@ -1633,12 +1697,14 @@ interface search {
  * @param startingCoords default latitude and longitude position
  * @param startingZoom default zoom
  * @param searchType the type of record
+ * @param openPopUp instructions for how webpage works
  */
 class MapComponent {
     constructor(backendService, blankSearchMessage, popupWarning) {
         this.backendService = backendService;
         this.blankSearchMessage = blankSearchMessage;
         this.popupWarning = popupWarning;
+        this.openPopUp = true;
         this.showSearch = false;
         this.showPopup = false;
         this.tabError = false;
@@ -1693,13 +1759,21 @@ class MapComponent {
                 .addTo(this.map);
         }
     }
+    changeOpenPopUp() {
+        if (this.openPopUp) {
+            this.openPopUp = false;
+        }
+        else {
+            this.openPopUp = true;
+        }
+    }
     /**
      * Sets attributes for the icon to be
      * displayed when showing records
      * */
     configureIcon() {
         this.defaultIcon = leaflet__WEBPACK_IMPORTED_MODULE_0__.icon({
-            iconUrl: "assets/icons/mapIcon.png",
+            iconUrl: "../assets/icons/mapIcon.png",
             iconSize: [45, 45],
             iconAnchor: [22.5, 45],
             popupAnchor: [0, -40],
@@ -1727,36 +1801,63 @@ class MapComponent {
       *Adds pins for each of the connected websites
     **/
     addPins() {
+        //Array of locations and website urls
         let data = [
             { "url": "http://connectedtempe.surge.sh/", "latitude": 33.41, "longitude": -111.94, "state": "Arizona", "county": "Early Tempe" },
             { "url": "http://connectedus.surge.sh/", "latitude": 38.89, "longitude": -77.03, "state": "Famous People", "county": "USA" },
+            { "url": "http://connectedmesa.surge.sh/", "latitude": 33.41, "longitude": -111.83, "state": "Arizona", "county": "Mesa" },
             { "url": "http://connectedherriman.surge.sh/", "latitude": 40.51, "longitude": -112.03, "state": "Utah", "county": "Herriman" },
             { "url": "http://connectedcody.surge.sh/", "latitude": 44.52, "longitude": -109.05, "state": "Wyoming", "county": "Cody" },
-            { "url": "http://connectedmesa.surge.sh/", "latitude": 33.41, "longitude": -111.83, "state": "Arizona", "county": "Mesa" }
         ];
         let results = data;
         this.currentData = results;
+        //how much space you want between both latitude and longitude before you combine into one pin
+        let diff = 1;
+        //array of locations that are close enough to be merged into one pin
+        let matches = [];
+        //area of locations that have already been added to make to prevent duplicates when merging locations
+        let completed = [];
+        //boolean that tells if it should start a new popUp or add next location to another pin
+        let start = true;
+        //Starts going through the list of locations
         for (let i = 0; i < results.length; i++) {
-            var marker = leaflet__WEBPACK_IMPORTED_MODULE_0__.marker([results[i].latitude, results[i].longitude], {
-                icon: this.defaultIcon,
-            });
-            //Prevents popups from displaying null as locations
-            if (results[i].state == null) {
-                results[i].state = "";
+            matches = [i];
+            start = true;
+            //Checks for locations that are within the var diff in both latitude and longitude of the original location
+            for (let j = i + 1; j < results.length; j++) {
+                if ((Math.abs(results[i].latitude - results[j].latitude) < diff) && (Math.abs(results[i].longitude - results[j].longitude) < diff)) {
+                    matches.push(j);
+                }
             }
-            if (results[i].county == null) {
-                results[i].state = "";
+            //goes through all locations that were found to be close enough to make one popUp Pin and adds them to the map
+            for (let k = 0; k < matches.length; k++) {
+                if (!completed.includes(matches[k])) {
+                    //starts new pin if false skips to add the location to an already started pin
+                    if (start) {
+                        var marker = leaflet__WEBPACK_IMPORTED_MODULE_0__.marker([results[i].latitude, results[i].longitude], {
+                            icon: this.defaultIcon,
+                        });
+                        //Prevents popups from displaying null as locations
+                        if (results[i].state == null) {
+                            results[i].state = "";
+                        }
+                        if (results[i].county == null) {
+                            results[i].state = "";
+                        }
+                        var popupContent = `<b>`;
+                        start = false;
+                    }
+                    popupContent += `<a class="popup-click" href="${results[matches[k]].url}" target='_blank' rel='noreferrer noopener'>
+            </br>${results[matches[k]].county}, ${results[matches[k]].state}
+            </a>`;
+                }
+                completed.push(matches[k]);
             }
-            var popupContent = `<b>
-      <a class="popup-click" href="${results[i].url}" target='_blank' rel='noreferrer noopener'>
-      </br>${results[i].county}, ${results[i].state}
-      </a>
-
-      </b>`;
+            popupContent += `</b>`;
             marker.bindPopup(popupContent);
             this.icons.addLayer(marker);
+            this.icons.addTo(this.map);
         }
-        this.icons.addTo(this.map);
     }
     /**
      * Called whenever the page is clicked. Only used to identify when a popup is clicked to perform a backend call.
@@ -1773,11 +1874,18 @@ class MapComponent {
     }
 }
 MapComponent.ɵfac = function MapComponent_Factory(t) { return new (t || MapComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_backend_service__WEBPACK_IMPORTED_MODULE_1__.BackendService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_3__.MatSnackBar), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__.MatDialog)); };
-MapComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: MapComponent, selectors: [["app-map"]], decls: 2, vars: 0, consts: [[1, "map-container"], ["id", "map", 3, "click"]], template: function MapComponent_Template(rf, ctx) { if (rf & 1) {
+MapComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: MapComponent, selectors: [["app-map"]], decls: 4, vars: 2, consts: [[1, "map-container"], ["id", "map", 3, "click"], [4, "ngIf"], [1, "opening-instructions"], [3, "click"], ["href", "https://www.familysearch.org/centers/locations", "target", "_blank"], ["href", "mailto:ConnectedTempe@gmail.com"]], template: function MapComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function MapComponent_Template_div_click_1_listener($event) { return ctx.pageClicked($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    } }, styles: [".map-container[_ngcontent-%COMP%] {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  \r\n  touch-action: none;\r\n}\r\n\r\n#map[_ngcontent-%COMP%] {\r\n  height: 100%;\r\n}\r\n\r\n.search-icon[_ngcontent-%COMP%] {\r\n  filter: invert(100%);\r\n  width: auto;\r\n  height: 80px;\r\n  display: block;\r\n}\r\n\r\n.refresh-icon[_ngcontent-%COMP%] {\r\n  font-size: 50px;\r\n  height: 50px;\r\n  width: 50px;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n  background-color: #002e5d;\r\n  width: 100px;\r\n  height: 100px;\r\n  margin: 50px;\r\n  padding: 50px;\r\n}\r\n\r\n.search-button[_ngcontent-%COMP%] {\r\n  background-color: #002e5d;\r\n  display: flex;\r\n  position: relative;\r\n  align-items: center;\r\n  justify-content: center;\r\n  z-index: 2;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%] {\r\n  transition: transform .5s;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%]:hover {\r\n  transform: scaleX(.95) scaleY(.95) scaleZ(.95);\r\n  background-color: #003c77;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%]:hover   #joseph-smith[_ngcontent-%COMP%] {\r\n  display: none;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%]:hover   p[_ngcontent-%COMP%] {\r\n  display: block;\r\n}\r\n\r\n.button-text[_ngcontent-%COMP%] {\r\n  display: none;\r\n  font-size: 20px;\r\n  text-align: center;\r\n  margin-top: 12px;\r\n}\r\n\r\n#reset-text[_ngcontent-%COMP%] {\r\n  display: none;\r\n  font-size: 20px;\r\n  text-align: center;\r\n  margin-top: 12px;\r\n}\r\n\r\n.tab-button[_ngcontent-%COMP%] {\r\n  background-color: #002e5d;\r\n  display: flex;\r\n  position: relative;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 150px;\r\n  height: 25px;\r\n  padding: 25px;\r\n  margin: 10px 50px 50px 0;\r\n}\r\n\r\n#tab-field[_ngcontent-%COMP%] {\r\n  width: 150px;\r\n}\r\n\r\n.mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%] {\r\n  background-color: rgba(255, 255, 255, .5) !important;\r\n}\r\n\r\n.count-label[_ngcontent-%COMP%] {\r\n  left: 0;\r\n  bottom: 0;\r\n  position: absolute;\r\n  margin: 25px;\r\n}\r\n\r\n.count-label[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\r\n  font-size: 18px;\r\n  padding: 10px;\r\n  background-color: rgba(0, 0, 0, .1);\r\n\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1hcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsUUFBUTtFQUNSLFNBQVM7RUFDVCwrQ0FBK0M7RUFDL0Msa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCxZQUFZO0VBQ1osY0FBYztBQUNoQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixZQUFZO0VBQ1osV0FBVztBQUNiOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixhQUFhO0VBQ2IsWUFBWTtFQUNaLGFBQWE7QUFDZjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsVUFBVTtBQUNaOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsOENBQThDO0VBQzlDLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixZQUFZO0VBQ1osYUFBYTtFQUNiLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLG9EQUFvRDtBQUN0RDs7QUFFQTtFQUNFLE9BQU87RUFDUCxTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGVBQWU7RUFDZixhQUFhO0VBQ2IsbUNBQW1DOztBQUVyQyIsImZpbGUiOiJtYXAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXAtY29udGFpbmVyIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIC8qIFRvIHByZXZlbnQgYXV0by1zY3JvbGwgYmVoYXZpb3Igb24gYnJvd3NlciAqL1xyXG4gIHRvdWNoLWFjdGlvbjogbm9uZTtcclxufVxyXG5cclxuI21hcCB7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcblxyXG4uc2VhcmNoLWljb24ge1xyXG4gIGZpbHRlcjogaW52ZXJ0KDEwMCUpO1xyXG4gIHdpZHRoOiBhdXRvO1xyXG4gIGhlaWdodDogODBweDtcclxuICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLnJlZnJlc2gtaWNvbiB7XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIGhlaWdodDogNTBweDtcclxuICB3aWR0aDogNTBweDtcclxufVxyXG5cclxuYnV0dG9uIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAyZTVkO1xyXG4gIHdpZHRoOiAxMDBweDtcclxuICBoZWlnaHQ6IDEwMHB4O1xyXG4gIG1hcmdpbjogNTBweDtcclxuICBwYWRkaW5nOiA1MHB4O1xyXG59XHJcblxyXG4uc2VhcmNoLWJ1dHRvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMmU1ZDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIHotaW5kZXg6IDI7XHJcbn1cclxuXHJcbiNqdXN0aWZ5IHtcclxuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjVzO1xyXG59XHJcblxyXG4janVzdGlmeTpob3ZlciB7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZVgoLjk1KSBzY2FsZVkoLjk1KSBzY2FsZVooLjk1KTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAzYzc3O1xyXG59XHJcblxyXG4janVzdGlmeTpob3ZlciAjam9zZXBoLXNtaXRoIHtcclxuICBkaXNwbGF5OiBub25lO1xyXG59XHJcblxyXG4janVzdGlmeTpob3ZlciBwIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLmJ1dHRvbi10ZXh0IHtcclxuICBkaXNwbGF5OiBub25lO1xyXG4gIGZvbnQtc2l6ZTogMjBweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLXRvcDogMTJweDtcclxufVxyXG5cclxuI3Jlc2V0LXRleHQge1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbiAgZm9udC1zaXplOiAyMHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiAxMnB4O1xyXG59XHJcblxyXG4udGFiLWJ1dHRvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMmU1ZDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIHdpZHRoOiAxNTBweDtcclxuICBoZWlnaHQ6IDI1cHg7XHJcbiAgcGFkZGluZzogMjVweDtcclxuICBtYXJnaW46IDEwcHggNTBweCA1MHB4IDA7XHJcbn1cclxuXHJcbiN0YWItZmllbGQge1xyXG4gIHdpZHRoOiAxNTBweDtcclxufVxyXG5cclxuLm1hdC1mb3JtLWZpZWxkLXdyYXBwZXIgLm1hdC1mb3JtLWZpZWxkLWZsZXgge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgLjUpICFpbXBvcnRhbnQ7XHJcbn0gXHJcblxyXG4uY291bnQtbGFiZWwge1xyXG4gIGxlZnQ6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBtYXJnaW46IDI1cHg7XHJcbn1cclxuXHJcbi5jb3VudC1sYWJlbCBwIHtcclxuICBmb250LXNpemU6IDE4cHg7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIC4xKTtcclxuXHJcbn0iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, MapComponent_div_2_Template, 44, 0, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, MapComponent_div_3_Template, 4, 0, "div", 2);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.openPopUp);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx.openPopUp);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf], styles: [".map-container[_ngcontent-%COMP%] {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  \r\n  touch-action: none;\r\n}\r\n\r\n#map[_ngcontent-%COMP%] {\r\n  height: 100%;\r\n}\r\n\r\n.opening-instructions[_ngcontent-%COMP%]{\r\n  background-color: white;\r\n  display: flex;\r\n  position: relative;\r\n  align-items: center;\r\n  justify-content: center;\r\n  z-index: 2;\r\n\r\n}\r\n\r\n.search-icon[_ngcontent-%COMP%] {\r\n  filter: invert(100%);\r\n  width: auto;\r\n  height: 80px;\r\n  display: block;\r\n}\r\n\r\n.refresh-icon[_ngcontent-%COMP%] {\r\n  font-size: 50px;\r\n  height: 50px;\r\n  width: 50px;\r\n}\r\n\r\n.search-button[_ngcontent-%COMP%] {\r\n  background-color: #002e5d;\r\n  display: flex;\r\n  position: relative;\r\n  align-items: center;\r\n  justify-content: center;\r\n  z-index: 2;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%] {\r\n  transition: transform .5s;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%]:hover {\r\n  transform: scaleX(.95) scaleY(.95) scaleZ(.95);\r\n  background-color: #003c77;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%]:hover   #joseph-smith[_ngcontent-%COMP%] {\r\n  display: none;\r\n}\r\n\r\n#justify[_ngcontent-%COMP%]:hover   p[_ngcontent-%COMP%] {\r\n  display: block;\r\n}\r\n\r\n.button-text[_ngcontent-%COMP%] {\r\n  display: none;\r\n  font-size: 20px;\r\n  text-align: center;\r\n  margin-top: 12px;\r\n}\r\n\r\n#reset-text[_ngcontent-%COMP%] {\r\n  display: none;\r\n  font-size: 20px;\r\n  text-align: center;\r\n  margin-top: 12px;\r\n}\r\n\r\n.tab-button[_ngcontent-%COMP%] {\r\n  background-color: #002e5d;\r\n  display: flex;\r\n  position: relative;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 150px;\r\n  height: 25px;\r\n  padding: 25px;\r\n  margin: 10px 50px 50px 0;\r\n}\r\n\r\n#tab-field[_ngcontent-%COMP%] {\r\n  width: 150px;\r\n}\r\n\r\n.mat-form-field-wrapper[_ngcontent-%COMP%]   .mat-form-field-flex[_ngcontent-%COMP%] {\r\n  background-color: rgba(255, 255, 255, .5) !important;\r\n}\r\n\r\n.count-label[_ngcontent-%COMP%] {\r\n  left: 0;\r\n  bottom: 0;\r\n  position: absolute;\r\n  margin: 25px;\r\n}\r\n\r\n.count-label[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\r\n  font-size: 18px;\r\n  padding: 10px;\r\n  background-color: rgba(0, 0, 0, .1);\r\n\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1hcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsUUFBUTtFQUNSLFNBQVM7RUFDVCwrQ0FBK0M7RUFDL0Msa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsdUJBQXVCO0VBQ3ZCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixVQUFVOztBQUVaOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCxZQUFZO0VBQ1osY0FBYztBQUNoQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixZQUFZO0VBQ1osV0FBVztBQUNiOztBQUdBO0VBQ0UseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixVQUFVO0FBQ1o7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSw4Q0FBOEM7RUFDOUMseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFlBQVk7RUFDWixhQUFhO0VBQ2Isd0JBQXdCO0FBQzFCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usb0RBQW9EO0FBQ3REOztBQUVBO0VBQ0UsT0FBTztFQUNQLFNBQVM7RUFDVCxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGFBQWE7RUFDYixtQ0FBbUM7O0FBRXJDIiwiZmlsZSI6Im1hcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hcC1jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgbGVmdDogMDtcclxuICByaWdodDogMDtcclxuICBib3R0b206IDA7XHJcbiAgLyogVG8gcHJldmVudCBhdXRvLXNjcm9sbCBiZWhhdmlvciBvbiBicm93c2VyICovXHJcbiAgdG91Y2gtYWN0aW9uOiBub25lO1xyXG59XHJcblxyXG4jbWFwIHtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuXHJcbi5vcGVuaW5nLWluc3RydWN0aW9uc3tcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIHotaW5kZXg6IDI7XHJcblxyXG59XHJcblxyXG4uc2VhcmNoLWljb24ge1xyXG4gIGZpbHRlcjogaW52ZXJ0KDEwMCUpO1xyXG4gIHdpZHRoOiBhdXRvO1xyXG4gIGhlaWdodDogODBweDtcclxuICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLnJlZnJlc2gtaWNvbiB7XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIGhlaWdodDogNTBweDtcclxuICB3aWR0aDogNTBweDtcclxufVxyXG5cclxuXHJcbi5zZWFyY2gtYnV0dG9uIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAyZTVkO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgei1pbmRleDogMjtcclxufVxyXG5cclxuI2p1c3RpZnkge1xyXG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAuNXM7XHJcbn1cclxuXHJcbiNqdXN0aWZ5OmhvdmVyIHtcclxuICB0cmFuc2Zvcm06IHNjYWxlWCguOTUpIHNjYWxlWSguOTUpIHNjYWxlWiguOTUpO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDNjNzc7XHJcbn1cclxuXHJcbiNqdXN0aWZ5OmhvdmVyICNqb3NlcGgtc21pdGgge1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbn1cclxuXHJcbiNqdXN0aWZ5OmhvdmVyIHAge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcblxyXG4uYnV0dG9uLXRleHQge1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbiAgZm9udC1zaXplOiAyMHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiAxMnB4O1xyXG59XHJcblxyXG4jcmVzZXQtdGV4dCB7XHJcbiAgZGlzcGxheTogbm9uZTtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbi10b3A6IDEycHg7XHJcbn1cclxuXHJcbi50YWItYnV0dG9uIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAyZTVkO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgd2lkdGg6IDE1MHB4O1xyXG4gIGhlaWdodDogMjVweDtcclxuICBwYWRkaW5nOiAyNXB4O1xyXG4gIG1hcmdpbjogMTBweCA1MHB4IDUwcHggMDtcclxufVxyXG5cclxuI3RhYi1maWVsZCB7XHJcbiAgd2lkdGg6IDE1MHB4O1xyXG59XHJcblxyXG4ubWF0LWZvcm0tZmllbGQtd3JhcHBlciAubWF0LWZvcm0tZmllbGQtZmxleCB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAuNSkgIWltcG9ydGFudDtcclxufVxyXG5cclxuLmNvdW50LWxhYmVsIHtcclxuICBsZWZ0OiAwO1xyXG4gIGJvdHRvbTogMDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbWFyZ2luOiAyNXB4O1xyXG59XHJcblxyXG4uY291bnQtbGFiZWwgcCB7XHJcbiAgZm9udC1zaXplOiAxOHB4O1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAuMSk7XHJcblxyXG59XHJcbiJdfQ== */"] });
 
 
 /***/ }),
