@@ -32,8 +32,10 @@ interface search {
  * @param startingCoords default latitude and longitude position
  * @param startingZoom default zoom
  * @param searchType the type of record
+ * @param openPopUp instructions for how webpage works
  */
 export class MapComponent implements AfterViewInit {
+  public openPopUp: boolean = true;
   public showSearch: boolean = false;
   public showPopup: boolean = false;
   public tabError: boolean = false;
@@ -108,6 +110,14 @@ export class MapComponent implements AfterViewInit {
     }
   }
 
+  public changeOpenPopUp(): void{
+    if(this.openPopUp){
+      this.openPopUp = false;
+    }else{
+      this.openPopUp = true;
+    }
+  }
+
   /**
    * Sets attributes for the icon to be
    * displayed when showing records
@@ -145,45 +155,67 @@ export class MapComponent implements AfterViewInit {
   **/
 
   private addPins(): void{
+    //Array of locations and website urls
     let data:{url: string, latitude: number, longitude: number, state: string, county: string}[] = [
       {"url":"http://connectedtempe.surge.sh/", "latitude":33.41, "longitude":-111.94,"state":"Arizona","county":"Early Tempe"},
       {"url":"http://connectedus.surge.sh/", "latitude":38.89, "longitude":-77.03,"state":"Famous People","county":"USA"},
+      {"url":"http://connectedmesa.surge.sh/", "latitude":33.41, "longitude":-111.83,"state":"Arizona","county":"Mesa"},
       {"url":"http://connectedherriman.surge.sh/", "latitude":40.51, "longitude":-112.03,"state":"Utah","county":"Herriman"},
       {"url":"http://connectedcody.surge.sh/", "latitude":44.52, "longitude":-109.05,"state":"Wyoming","county":"Cody"},
-      {"url":"http://connectedmesa.surge.sh/", "latitude":33.41, "longitude":-111.83,"state":"Arizona","county":"Mesa"}
+
+
 
     ];
     let results = data;
     this.currentData = results;
-
-
+    //how much space you want between both latitude and longitude before you combine into one pin
+    let diff = 1
+    //array of locations that are close enough to be merged into one pin
+    let matches = [];
+    //area of locations that have already been added to make to prevent duplicates when merging locations
+    let completed = [];
+    //boolean that tells if it should start a new popUp or add next location to another pin
+    let start = true;
+    //Starts going through the list of locations
     for (let i = 0; i < results.length; i++) {
+      matches = [i];
+      start = true;
 
-      var marker = L.marker([results[i].latitude, results[i].longitude], {
-        icon: this.defaultIcon,
-      });
-
-      //Prevents popups from displaying null as locations
-      if (results[i].state == null) {
-        results[i].state = "";
-      }
-      if (results[i].county == null) {
-        results[i].state = "";
-      }
-      var popupContent = `<b>
-      <a class="popup-click" href="${results[i].url}" target='_blank' rel='noreferrer noopener'>
-      </br>${results[i].county}, ${results[i].state}
-      </a>
-
-      </b>`;
-
-      marker.bindPopup(popupContent);
-      this.icons.addLayer(marker);
+        //Checks for locations that are within the var diff in both latitude and longitude of the original location
+        for(let j = i+1;j < results.length;j++){
+          if((Math.abs(results[i].latitude-results[j].latitude) < diff ) && (Math.abs(results[i].longitude-results[j].longitude) < diff)){
+            matches.push(j);
+          }
+        }
+        //goes through all locations that were found to be close enough to make one popUp Pin and adds them to the map
+        for(let k=0;k<matches.length;k++){
+          if(!completed.includes(matches[k])){
+            //starts new pin if false skips to add the location to an already started pin
+            if(start){
+              var marker = L.marker([results[i].latitude, results[i].longitude], {
+                icon: this.defaultIcon,
+              });
+              //Prevents popups from displaying null as locations
+              if (results[i].state == null) {
+                results[i].state = "";
+              }
+              if (results[i].county == null) {
+                results[i].state = "";
+              }
+              var popupContent = `<b>`;
+              start = false;
+            }
+            popupContent += `<a class="popup-click" href="${results[matches[k]].url}" target='_blank' rel='noreferrer noopener'>
+            </br>${results[matches[k]].county}, ${results[matches[k]].state}
+            </a>`;
+        }
+          completed.push(matches[k]);
+        }
+        popupContent += `</b>`;
+        marker.bindPopup(popupContent);
+        this.icons.addLayer(marker);
+        this.icons.addTo(this.map);
     }
-
-    this.icons.addTo(this.map);
-
-
   }
 
 

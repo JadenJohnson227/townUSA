@@ -2,12 +2,48 @@
   <div id="map" (click)="pageClicked($event)"></div>
 </div>
 
-
-<!--
-<div *ngIf="showSearch">
-  <app-search (searchToMap)="startSearch($event)" (searchProjects)="startProjects($event)"></app-search>
+<div *ngIf="openPopUp">
+  <div class = "opening-instructions">
+    <div>
+      <h1>Do You have...<br>
+      Historical Cousins in the USA</h1>
+    </div>
+    <div>
+      <p>Select a pin to see if you have historical cousins there. <br>
+        You will then:</p>
+        <ol>
+          <li>Enter a deceased grandparent or other relative (use birth name for women), then Search
+            (Just enter First and middle name, Last name, and the state where they died.)</li>
+          <li>Scroll through the possible choices for your relative, then tap the correct one.</li>
+          <li>Wait while a list of possible cousin matches is checked.</li>
+          <li>After you see who you are related to, select one to see how you are related.</li>
+          <li>Select your ancestor to see what information he/she has in the tree.</li>
+        </ol>
+        <button (click)="changeOpenPopUp()">Get Started</button>
+    </div>
+    <div>
+      <p>If you find that:</p>
+        <ul>
+          <li>Your grandparent/ancestor is not found (not in the shared FamilySearch tree), or</li>
+          <li>You don't have any cousins in the place you selected, or</li>
+          <li>Your ancestor has few or no Photos and Memories,</li>
+        </ul>
+      <p>Then you can find free help in building your family tree, finding
+         online records about your ancestor, or adding photos, stories,
+         documents, and audio recordings to your ancestor's page.</p>
+      <button><a href="https://www.familysearch.org/centers/locations" target="_blank">Get Help</a></button>
+      <p>Would you like to add a pin for your town?
+        contact: <a href="mailto:ConnectedTempe@gmail.com">ConnectedTempe@gmail.com</a></p>
+    </div>
+  </div>
 </div>
--->
+
+<div *ngIf="!openPopUp">
+  <div class = "opening-instructions">
+    <button (click)="changeOpenPopUp()">Open Instructions</button>
+  </div>
+</div>
+
 
 
 <!-- <div *ngIf="showSearch">

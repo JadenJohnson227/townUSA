@@ -12,6 +12,16 @@
   height: 100%;
 }
 
+.opening-instructions{
+  background-color: white;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+}
+
 .search-icon {
   filter: invert(100%);
   width: auto;
@@ -25,13 +35,6 @@
   width: 50px;
 }
 
-button {
-  background-color: #002e5d;
-  width: 100px;
-  height: 100px;
-  margin: 50px;
-  padding: 50px;
-}
 
 .search-button {
   background-color: #002e5d;
@@ -91,7 +94,7 @@ button {
 
 .mat-form-field-wrapper .mat-form-field-flex {
   background-color: rgba(255, 255, 255, .5) !important;
-} 
+}
 
 .count-label {
   left: 0;
