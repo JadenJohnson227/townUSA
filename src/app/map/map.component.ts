@@ -157,11 +157,13 @@ export class MapComponent implements AfterViewInit {
   private addPins(): void{
     //Array of locations and website urls
     let data:{url: string, latitude: number, longitude: number, state: string, county: string}[] = [
-      {"url":"http://connectedtempe.surge.sh/", "latitude":33.41, "longitude":-111.94,"state":"Arizona","county":"Early Tempe"},
+      {"url":"http://connectedtempe.surge.sh/", "latitude":33.41, "longitude":-111.94,"state":"Arizona","county":"Tempe"},
       {"url":"http://connectedus.surge.sh/", "latitude":38.89, "longitude":-77.03,"state":"Famous People","county":"USA"},
       {"url":"http://connectedmesa.surge.sh/", "latitude":33.41, "longitude":-111.83,"state":"Arizona","county":"Mesa"},
       {"url":"http://connectedherriman.surge.sh/", "latitude":40.51, "longitude":-112.03,"state":"Utah","county":"Herriman"},
       {"url":"http://connectedcody.surge.sh/", "latitude":44.52, "longitude":-109.05,"state":"Wyoming","county":"Cody"},
+      {"url":"http://connectedRichmond.surge.sh/", "latitude":37.54, "longitude":-77.43,"state":"Virgina","county":"Richmond"},
+      {"url":"http://connectedYubaSutter.surge.sh/", "latitude":39.13, "longitude":-121.6,"state":"California","county":"Yuba"},
 
 
 
