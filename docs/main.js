@@ -1773,7 +1773,7 @@ class MapComponent {
      * */
     configureIcon() {
         this.defaultIcon = leaflet__WEBPACK_IMPORTED_MODULE_0__.icon({
-            iconUrl: "assets/icons/mapIcon.png",
+            iconUrl: "../assets/icons/mapIcon.png",
             iconSize: [45, 45],
             iconAnchor: [22.5, 45],
             popupAnchor: [0, -40],
@@ -1803,11 +1803,13 @@ class MapComponent {
     addPins() {
         //Array of locations and website urls
         let data = [
-            { "url": "http://connectedtempe.surge.sh/", "latitude": 33.41, "longitude": -111.94, "state": "Arizona", "county": "Early Tempe" },
+            { "url": "http://connectedtempe.surge.sh/", "latitude": 33.41, "longitude": -111.94, "state": "Arizona", "county": "Tempe" },
             { "url": "http://connectedus.surge.sh/", "latitude": 38.89, "longitude": -77.03, "state": "Famous People", "county": "USA" },
             { "url": "http://connectedmesa.surge.sh/", "latitude": 33.41, "longitude": -111.83, "state": "Arizona", "county": "Mesa" },
             { "url": "http://connectedherriman.surge.sh/", "latitude": 40.51, "longitude": -112.03, "state": "Utah", "county": "Herriman" },
             { "url": "http://connectedcody.surge.sh/", "latitude": 44.52, "longitude": -109.05, "state": "Wyoming", "county": "Cody" },
+            { "url": "http://connectedRichmond.surge.sh/", "latitude": 37.54, "longitude": -77.43, "state": "Virgina", "county": "Richmond" },
+            { "url": "http://connectedYubaSutter.surge.sh/", "latitude": 39.13, "longitude": -121.6, "state": "California", "county": "Yuba" },
         ];
         let results = data;
         this.currentData = results;
